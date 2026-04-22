@@ -2,7 +2,7 @@
 
 The simplest and most flexible way to build with a compiling magic 🪄
 
-An Rsbuild plugin that allows you to create virtual modules, the pro version of [rspack-plugin-virtual-module](https://github.com/rspack-contrib/rspack-plugin-virtual-module) with loader API.
+An Rsbuild plugin that allows you to create virtual modules, the pro version of [rspack-plugin-virtual-module](https://github.com/rstackjs/rspack-plugin-virtual-module) with loader API.
 
 <p>
   <a href="https://npmjs.com/package/rsbuild-plugin-virtual-module">
