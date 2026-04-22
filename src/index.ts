@@ -86,5 +86,5 @@ const pluginVirtualModule = (
   },
 });
 
-export { PLUGIN_VIRTUAL_MODULE_NAME, pluginVirtualModule };
 export type { PluginVirtualModuleOptions, VirtualModules };
+export { PLUGIN_VIRTUAL_MODULE_NAME, pluginVirtualModule };
