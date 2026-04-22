@@ -1,6 +1,6 @@
 {
   "name": "rsbuild-plugin-virtual-module",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/rspack-contrib/rsbuild-plugin-virtual-module"
