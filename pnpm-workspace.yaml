@@ -1,6 +1,6 @@
 packages:
   - playground
+
 onlyBuiltDependencies:
-  - '@biomejs/biome'
   - core-js
   - simple-git-hooks
