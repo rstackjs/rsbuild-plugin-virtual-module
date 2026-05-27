@@ -14,15 +14,15 @@
       "require": "./dist/index.cjs"
     }
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "rslib build",
-    "dev": "rslib build --watch",
+    "build": "rslib",
+    "dev": "rslib -w",
     "lint": "rslint && prettier -c .",
     "lint:write": "rslint --fix && prettier -w .",
     "prepare": "simple-git-hooks && pnpm run build",
@@ -33,19 +33,20 @@
     "pre-commit": "pnpm run lint:write"
   },
   "devDependencies": {
-    "@playwright/test": "^1.59.1",
-    "@rsbuild/core": "^2.0.3",
-    "@rslib/core": "^0.21.3",
-    "@rslint/core": "^0.5.1",
-    "@types/node": "^24.12.2",
-    "playwright": "^1.59.1",
+    "@playwright/test": "^1.60.0",
+    "@rsbuild/core": "^2.0.7",
+    "@rslib/core": "^0.21.5",
+    "@rslint/core": "^0.5.3",
+    "@types/node": "^24.12.4",
+    "@typescript/native-preview": "7.0.0-dev.20260527.1",
+    "playwright": "^1.60.0",
     "prettier": "^3.8.3",
     "rsbuild-plugin-virtual-module": "workspace:*",
     "simple-git-hooks": "^2.13.1",
-    "typescript": "^5.9.3"
+    "typescript": "6.0.3"
   },
   "peerDependencies": {
-    "@rsbuild/core": "^1.0.0 || ^2.0.0"
+    "@rsbuild/core": "^1.0.0 || ^2.0.0-0"
   },
   "peerDependenciesMeta": {
     "@rsbuild/core": {
