@@ -5,6 +5,10 @@
     "type": "git",
     "url": "git+https://github.com/rstackjs/rsbuild-plugin-virtual-module.git"
   },
+  "homepage": "https://github.com/rstackjs/rsbuild-plugin-virtual-module#readme",
+  "bugs": {
+    "url": "https://github.com/rstackjs/rsbuild-plugin-virtual-module/issues"
+  },
   "license": "MIT",
   "type": "module",
   "exports": {
