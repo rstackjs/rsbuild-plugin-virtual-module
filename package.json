@@ -37,14 +37,14 @@
     "pre-commit": "pnpm run lint:write"
   },
   "devDependencies": {
-    "@playwright/test": "^1.60.0",
-    "@rsbuild/core": "^2.0.9",
-    "@rslib/core": "^0.22.0",
-    "@rslint/core": "^0.6.1",
-    "@types/node": "^24.12.4",
-    "@typescript/native-preview": "7.0.0-dev.20260527.2",
-    "playwright": "^1.60.0",
-    "prettier": "^3.8.3",
+    "@playwright/test": "^1.61.1",
+    "@rsbuild/core": "^2.1.4",
+    "@rslib/core": "^0.23.1",
+    "@rslint/core": "^0.6.4",
+    "@types/node": "^24.13.2",
+    "@typescript/native-preview": "7.0.0-dev.20260702.3",
+    "playwright": "^1.61.1",
+    "prettier": "^3.9.4",
     "rsbuild-plugin-virtual-module": "workspace:*",
     "simple-git-hooks": "^2.13.1",
     "typescript": "6.0.3"
@@ -57,7 +57,7 @@
       "optional": true
     }
   },
-  "packageManager": "pnpm@11.5.0",
+  "packageManager": "pnpm@11.9.0",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
