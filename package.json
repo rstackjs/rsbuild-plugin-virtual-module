@@ -42,7 +42,6 @@
     "@rslib/core": "^0.23.2",
     "@rslint/core": "^0.6.1",
     "@types/node": "^24.12.4",
-    "@typescript/native-preview": "7.0.0-dev.20260527.2",
     "playwright": "^1.60.0",
     "prettier": "^3.8.3",
     "rsbuild-plugin-virtual-module": "workspace:*",
