@@ -39,15 +39,14 @@
   "devDependencies": {
     "@playwright/test": "^1.60.0",
     "@rsbuild/core": "^2.0.9",
-    "@rslib/core": "^0.22.0",
+    "@rslib/core": "^0.23.2",
     "@rslint/core": "^0.6.1",
     "@types/node": "^24.12.4",
-    "@typescript/native-preview": "7.0.0-dev.20260527.2",
     "playwright": "^1.60.0",
     "prettier": "^3.8.3",
     "rsbuild-plugin-virtual-module": "workspace:*",
     "simple-git-hooks": "^2.13.1",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   },
   "peerDependencies": {
     "@rsbuild/core": "^1.0.0 || ^2.0.0"
