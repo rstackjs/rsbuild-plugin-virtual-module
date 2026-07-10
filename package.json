@@ -30,17 +30,18 @@
     "lint": "rslint && prettier -c .",
     "lint:write": "rslint --fix && prettier -w .",
     "prepare": "simple-git-hooks",
-    "test": "playwright test",
+    "test": "rstest",
     "bump": "npx bumpp"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm run lint:write"
   },
   "devDependencies": {
-    "@playwright/test": "^1.60.0",
     "@rsbuild/core": "^2.0.9",
     "@rslib/core": "^0.23.2",
     "@rslint/core": "^0.6.1",
+    "@rstest/core": "^0.11.1",
+    "@rstest/playwright": "^0.11.1",
     "@types/node": "^24.12.4",
     "playwright": "^1.60.0",
     "prettier": "^3.8.3",
