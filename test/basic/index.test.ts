@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { expect, test } from '@rstest/playwright';
 import { createRsbuild } from '@rsbuild/core';
 import { pluginVirtualModule } from 'rsbuild-plugin-virtual-module';
-import { getRandomPort } from '../helper';
+import { getRandomPort } from '@rstackjs/test-utils';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
