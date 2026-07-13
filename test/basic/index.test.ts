@@ -57,7 +57,7 @@ test.describe('pluginVirtualModule', () => {
           }),
         ],
         server: {
-          port: getRandomPort(),
+          port: await getRandomPort(),
         },
       },
     });
