@@ -45,12 +45,6 @@ import foo from 'virtual-foo';
 console.log(foo); // {}
 ```
 
-## What's the difference from Rspack's VirtualModulesPlugin?
-
-Rspack's built-in [`VirtualModulesPlugin`](https://rspack.rs/plugins/rspack/virtual-modules-plugin) accepts source strings and provides `writeModule` for imperative updates.
-
-This plugin is closer to webpack's [`VirtualUrlPlugin`](https://webpack.js.org/plugins/virtual-url-plugin/): an async [`TransformHandler`](https://rsbuild.dev/plugins/dev/core#apitransform) generates the module and exposes `loaderContext` APIs such as `addDependency` and `addContextDependency` to track changes and trigger HMR.
-
 ## Options
 
 ### virtualModules
@@ -117,6 +111,12 @@ pluginVirtualModule({
 ```
 
 The actual virtual module is `./src/virtual-foo.js`
+
+## What's the difference from Rspack's VirtualModulesPlugin?
+
+Rspack's built-in [`VirtualModulesPlugin`](https://rspack.rs/plugins/rspack/virtual-modules-plugin) accepts source strings and provides `writeModule` for imperative updates.
+
+This plugin is closer to webpack's [`VirtualUrlPlugin`](https://webpack.js.org/plugins/virtual-url-plugin/): an async [`TransformHandler`](https://rsbuild.dev/plugins/dev/core#apitransform) generates the module and exposes `loaderContext` APIs such as `addDependency` and `addContextDependency` to track changes and trigger HMR.
 
 ## License
 
