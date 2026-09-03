@@ -1,12 +1,10 @@
+// Configuration guide: https://rstack.rs/config
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
-import { defineConfig } from '@rsbuild/core';
+import { define } from 'rstack';
 import { pluginVirtualModule } from 'rsbuild-plugin-virtual-module';
 
-export default defineConfig({
-  dev: {
-    writeToDisk: true,
-  },
+define.app({
   plugins: [
     pluginVirtualModule({
       virtualModules: {
@@ -14,7 +12,7 @@ export default defineConfig({
           addDependency,
           addContextDependency,
         }) => {
-          const jsonFolderPath = join(__dirname, 'json');
+          const jsonFolderPath = join(import.meta.dirname, 'json');
           const ls = await readdir(jsonFolderPath);
           addContextDependency(jsonFolderPath);
 
